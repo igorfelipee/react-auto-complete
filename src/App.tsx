@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useMemo } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import AutoCompleteInput from "./components/auto-complete-input";
 import { fetchTodos } from "./services/api";
 import { highlightText } from "./services/highlight";
@@ -26,7 +26,7 @@ function App() {
   const filterTodos = useCallback(() => {
     if (!search) return [];
 
-    return todos.filter((todo) => todo.title.includes(search));
+    return todos.filter((todo) => todo.title.includes(search.toLowerCase()));
   }, [search]);
 
   const sanatizedTodos = useCallback(() => {
