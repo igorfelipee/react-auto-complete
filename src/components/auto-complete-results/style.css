@@ -1,0 +1,27 @@
+.autocomplete__results {
+    box-sizing: border-box;
+
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+
+    position: absolute;
+    top: 80px;
+    overflow: scroll;
+
+    background-color: white;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 4px;
+
+    padding: 5px;
+}
+
+.autocomplete__result-item {
+    margin: 15px 0;
+    line-height: 1.3;
+}
+
+.autocomplete__result-item--highlighted {
+    font-weight: bold;
+    color: #2ecc71;
+}

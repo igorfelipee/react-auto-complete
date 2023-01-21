@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect } from "react";
 import AutoCompleteInput from "./components/auto-complete-input";
 import { fetchTodos } from "./services/api";
 import { highlightText } from "./services/highlight";
+import "./index.css";
 
 function App() {
   const [search, setSearch] = useState<string>("");
@@ -40,7 +41,7 @@ function App() {
   }, [search]);
 
   return (
-    <div className="App">
+    <div className="app-wrapper">
       <AutoCompleteInput
         label="My Tasks"
         search={search}
