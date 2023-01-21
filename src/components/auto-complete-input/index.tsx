@@ -1,5 +1,6 @@
 import { FC } from "react";
 import AutoCompleteResults from "../auto-complete-results";
+import "./style.css";
 
 type TAutoCompleteInput = {
   label: string;
@@ -11,10 +12,9 @@ type TAutoCompleteInput = {
 const AutoCompleteInput: FC<TAutoCompleteInput> = (props) => {
   return (
     <label className="autocomplete">
-      {props.label}
+      <strong>{props.label}</strong>
       <input
         type="text"
-        placeholder={props.label}
         defaultValue={props.search}
         onChange={props.onChangeHandler}
         className="autocomplete__input"

@@ -1,0 +1,18 @@
+.autocomplete {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem;
+}
+
+.autocomplete__input {
+    box-sizing: border-box;
+    margin-top: 10px;
+    height: 40px;
+
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 4px;
+    padding: 5px;
+}
