@@ -11,13 +11,19 @@ type TAutoCompleteInput = {
 
 const AutoCompleteInput: FC<TAutoCompleteInput> = (props) => {
   return (
-    <label className="autocomplete">
-      <strong className="autocomplete__labelText">{props.label}</strong>
+    <label data-cy="autocomplete" className="autocomplete">
+      <strong
+        data-cy="autocomplete-labelText"
+        className="autocomplete__labelText"
+      >
+        {props.label}
+      </strong>
       <input
         type="text"
         defaultValue={props.search}
         onChange={props.onChangeHandler}
         className="autocomplete__input"
+        data-cy="autocomplete-input"
       />
       {props.search && (
         <AutoCompleteResults searchResults={props.searchResults} />

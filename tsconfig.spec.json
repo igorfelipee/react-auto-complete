@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../dist/out-tsc",
+    "module": "commonjs",
+    "types": ["jest", "node"],
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "useUnknownInCatchVariables": false,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "declaration": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "sourceMap": false,
+    "strict": true,
+    "resolveJsonModule": true,
+    "lib": ["es2020", "DOM"],
+    "allowJs": true
+  },
+  "include": ["**/*.spec.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

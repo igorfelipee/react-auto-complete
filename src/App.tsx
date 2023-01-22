@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from "react";
 import AutoCompleteInput from "./components/auto-complete-input";
-import { fetchTodos } from "./services/api";
+import { fetchTodos } from "./services/todo";
 import { highlightText } from "./services/highlight";
 import "./index.css";
 
