@@ -27,6 +27,7 @@ const AutoCompleteResults: FC<TAutoCompleteResults> = (props) => {
         <li
           className="autocomplete__result-item"
           key={index}
+          tabIndex={0}
           dangerouslySetInnerHTML={{ __html: searchResult }}
         ></li>
       ))}
